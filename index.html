@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inscription — Association des Jeunes Diplômés de Djibouti</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════
+       HERO SECTION
+  ══════════════════════════════════════════ -->
+  <header class="hero">
+    <div class="hero__bg-shapes">
+      <span class="shape shape--1"></span>
+      <span class="shape shape--2"></span>
+      <span class="shape shape--3"></span>
+    </div>
+
+    <div class="lang-toggle">
+      <button class="lang-btn active" data-lang="fr">FR</button>
+      <span class="lang-sep">|</span>
+      <button class="lang-btn" data-lang="en">EN</button>
+    </div>
+
+    <div class="hero__content">
+      <div class="hero__flag">🇩🇯</div>
+      <p class="hero__eyebrow" data-fr="Association des Jeunes Diplômés" data-en="Association of Young Graduates">
+        Association des Jeunes Diplômés
+      </p>
+      <h1 class="hero__title" data-fr="Rejoignez <em>l'élite</em><br/>de demain" data-en="Join <em>tomorrow's</em><br/>elite">
+        Rejoignez <em>l'élite</em><br/>de demain
+      </h1>
+      <p class="hero__sub" data-fr="Une communauté dynamique de jeunes diplômés bâtissant l'avenir de Djibouti ensemble." data-en="A dynamic community of young graduates building the future of Djibouti together.">
+        Une communauté dynamique de jeunes diplômés bâtissant l'avenir de Djibouti ensemble.
+      </p>
+      <a href="#form-section" class="hero__cta">
+        <span data-fr="Postuler maintenant" data-en="Apply now">Postuler maintenant</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-hint">
+      <div class="scroll-hint__line"></div>
+    </div>
+  </header>
+
+  <!-- ══════════════════════════════════════════
+       STATS / HIGHLIGHTS
+  ══════════════════════════════════════════ -->
+  <section class="stats">
+    <div class="stats__inner">
+      <div class="stats__item reveal">
+        <span class="stats__number">500+</span>
+        <span class="stats__label" data-fr="Membres actifs" data-en="Active members">Membres actifs</span>
+      </div>
+      <div class="stats__divider"></div>
+      <div class="stats__item reveal" style="--delay:.1s">
+        <span class="stats__number">12</span>
+        <span class="stats__label" data-fr="Domaines couverts" data-en="Fields covered">Domaines couverts</span>
+      </div>
+      <div class="stats__divider"></div>
+      <div class="stats__item reveal" style="--delay:.2s">
+        <span class="stats__number">3</span>
+        <span class="stats__label" data-fr="Années d'existence" data-en="Years of existence">Années d'existence</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       MEDIA GALLERY
+  ══════════════════════════════════════════ -->
+  <section class="gallery-section">
+    <div class="section-header reveal">
+      <span class="section-tag" data-fr="Notre communauté" data-en="Our community">Notre communauté</span>
+      <h2 data-fr="Moments &amp; Événements" data-en="Moments &amp; Events">Moments &amp; Événements</h2>
+    </div>
+
+    <div class="gallery-grid">
+      <!-- Image placeholders – remplacez src par vos vraies photos -->
+      <div class="gallery-card gallery-card--wide reveal">
+        <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=900&q=80" alt="Événement diplômés" loading="lazy" />
+        <div class="gallery-card__overlay">
+          <p data-fr="Cérémonie de lancement 2023" data-en="Launch Ceremony 2023">Cérémonie de lancement 2023</p>
+        </div>
+      </div>
+      <div class="gallery-card reveal" style="--delay:.1s">
+        <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=600&q=80" alt="Networking" loading="lazy" />
+        <div class="gallery-card__overlay">
+          <p data-fr="Soirée Networking" data-en="Networking Evening">Soirée Networking</p>
+        </div>
+      </div>
+      <div class="gallery-card reveal" style="--delay:.2s">
+        <img src="https://images.unsplash.com/photo-1544531585-9847b68c8c86?w=600&q=80" alt="Atelier" loading="lazy" />
+        <div class="gallery-card__overlay">
+          <p data-fr="Atelier Entrepreneuriat" data-en="Entrepreneurship Workshop">Atelier Entrepreneuriat</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Vidéo YouTube intégrée -->
+    <div class="video-wrap reveal">
+      <div class="video-wrap__label">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+        <span data-fr="Vidéo de présentation" data-en="Presentation video">Vidéo de présentation</span>
+      </div>
+      <!-- Remplacez VIDEO_ID par votre identifiant YouTube -->
+      <div class="video-frame">
+        <iframe
+          src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+          title="Association des Jeunes Diplômés de Djibouti"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+          loading="lazy"
+        ></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       REGISTRATION FORM
+  ══════════════════════════════════════════ -->
+  <section class="form-section" id="form-section">
+    <div class="section-header reveal">
+      <span class="section-tag" data-fr="Formulaire d'inscription" data-en="Registration form">Formulaire d'inscription</span>
+      <h2 data-fr="Devenez membre" data-en="Become a member">Devenez membre</h2>
+      <p class="section-desc" data-fr="Remplissez le formulaire ci-dessous. Toutes les informations restent confidentielles." data-en="Fill in the form below. All information remains confidential.">
+        Remplissez le formulaire ci-dessous. Toutes les informations restent confidentielles.
+      </p>
+    </div>
+
+    <!-- Step indicator -->
+    <div class="steps reveal">
+      <div class="step active" data-step="1">
+        <div class="step__dot">1</div>
+        <span data-fr="Identité" data-en="Identity">Identité</span>
+      </div>
+      <div class="step__line"></div>
+      <div class="step" data-step="2">
+        <div class="step__dot">2</div>
+        <span data-fr="Formation" data-en="Education">Formation</span>
+      </div>
+      <div class="step__line"></div>
+      <div class="step" data-step="3">
+        <div class="step__dot">3</div>
+        <span data-fr="Profil" data-en="Profile">Profil</span>
+      </div>
+    </div>
+
+    <form id="registrationForm" class="form-card reveal" novalidate>
+      <!-- ── STEP 1 : Identité ── -->
+      <div class="form-step active" data-step="1">
+        <div class="form-step__title">
+          <span class="step-icon">👤</span>
+          <h3 data-fr="Informations personnelles" data-en="Personal information">Informations personnelles</h3>
+        </div>
+
+        <div class="field-row">
+          <div class="field">
+            <label for="fullname">
+              <span data-fr="Nom complet" data-en="Full name">Nom complet</span>
+              <span class="required">*</span>
+            </label>
+            <input type="text" id="fullname" name="fullname" placeholder="ex: Ahmed Ali Hassan" required />
+            <span class="field__error" data-fr="Ce champ est requis." data-en="This field is required."></span>
+          </div>
+        </div>
+
+        <div class="field-row field-row--2">
+          <div class="field">
+            <label for="email">
+              Email <span class="required">*</span>
+            </label>
+            <input type="email" id="email" name="email" placeholder="exemple@email.com" required />
+            <span class="field__error"></span>
+          </div>
+          <div class="field">
+            <label for="phone">
+              <span data-fr="Téléphone" data-en="Phone">Téléphone</span>
+              <span class="required">*</span>
+            </label>
+            <input type="tel" id="phone" name="phone" placeholder="+253 77 XX XX XX" required />
+            <span class="field__error"></span>
+          </div>
+        </div>
+
+        <!-- Photo de profil -->
+        <div class="field">
+          <label>
+            <span data-fr="Photo de profil" data-en="Profile photo">Photo de profil</span>
+          </label>
+          <div class="upload-zone" id="photoZone">
+            <div class="upload-zone__preview" id="photoPreview">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+            </div>
+            <div class="upload-zone__text">
+              <p data-fr="Glissez votre photo ou" data-en="Drag your photo or">Glissez votre photo ou</p>
+              <label for="photoInput" class="upload-btn" data-fr="choisissez un fichier" data-en="choose a file">choisissez un fichier</label>
+              <input type="file" id="photoInput" name="photo" accept="image/*" hidden />
+              <small data-fr="JPG, PNG — max 5 MB" data-en="JPG, PNG — max 5 MB">JPG, PNG — max 5 MB</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-nav">
+          <div></div>
+          <button type="button" class="btn btn--next" data-next="2">
+            <span data-fr="Suivant" data-en="Next">Suivant</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- ── STEP 2 : Formation ── -->
+      <div class="form-step" data-step="2">
+        <div class="form-step__title">
+          <span class="step-icon">🎓</span>
+          <h3 data-fr="Parcours académique" data-en="Academic background">Parcours académique</h3>
+        </div>
+
+        <div class="field">
+          <label for="diploma">
+            <span data-fr="Diplôme obtenu" data-en="Degree obtained">Diplôme obtenu</span>
+            <span class="required">*</span>
+          </label>
+          <input type="text" id="diploma" name="diploma" placeholder="ex: Master en Gestion, Licence Informatique…" required />
+          <span class="field__error"></span>
+        </div>
+
+        <div class="field-row field-row--2">
+          <div class="field">
+            <label for="university">
+              <span data-fr="Université / École" data-en="University / School">Université / École</span>
+              <span class="required">*</span>
+            </label>
+            <input type="text" id="university" name="university" placeholder="ex: Université de Djibouti" required />
+            <span class="field__error"></span>
+          </div>
+          <div class="field">
+            <label for="year">
+              <span data-fr="Année d'obtention" data-en="Graduation year">Année d'obtention</span>
+              <span class="required">*</span>
+            </label>
+            <select id="year" name="year" required>
+              <option value="" disabled selected data-fr="Sélectionner" data-en="Select">Sélectionner</option>
+            </select>
+            <span class="field__error"></span>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="domain">
+            <span data-fr="Domaine d'activité" data-en="Field of activity">Domaine d'activité</span>
+            <span class="required">*</span>
+          </label>
+          <div class="domain-grid" id="domainGrid">
+            <button type="button" class="domain-chip" data-value="technologie">💻 Technologie</button>
+            <button type="button" class="domain-chip" data-value="sante">🏥 <span data-fr="Santé" data-en="Healthcare">Santé</span></button>
+            <button type="button" class="domain-chip" data-value="education">📚 <span data-fr="Éducation" data-en="Education">Éducation</span></button>
+            <button type="button" class="domain-chip" data-value="finance">💼 Finance</button>
+            <button type="button" class="domain-chip" data-value="droit">⚖️ <span data-fr="Droit" data-en="Law">Droit</span></button>
+            <button type="button" class="domain-chip" data-value="ingenierie">🔧 <span data-fr="Ingénierie" data-en="Engineering">Ingénierie</span></button>
+            <button type="button" class="domain-chip" data-value="commerce">🛒 Commerce</button>
+            <button type="button" class="domain-chip" data-value="art">🎨 Arts &amp; Culture</button>
+            <button type="button" class="domain-chip" data-value="environnement">🌿 <span data-fr="Environnement" data-en="Environment">Environnement</span></button>
+            <button type="button" class="domain-chip" data-value="politique">🏛️ <span data-fr="Sciences Politiques" data-en="Political Sciences">Sciences Politiques</span></button>
+            <button type="button" class="domain-chip" data-value="media">📡 <span data-fr="Médias" data-en="Media">Médias</span></button>
+            <button type="button" class="domain-chip" data-value="autre">✨ <span data-fr="Autre" data-en="Other">Autre</span></button>
+          </div>
+          <input type="hidden" id="domain" name="domain" required />
+          <span class="field__error" id="domainError"></span>
+        </div>
+
+        <div class="form-nav">
+          <button type="button" class="btn btn--back" data-prev="1">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+            <span data-fr="Retour" data-en="Back">Retour</span>
+          </button>
+          <button type="button" class="btn btn--next" data-next="3">
+            <span data-fr="Suivant" data-en="Next">Suivant</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- ── STEP 3 : Profil & Réseaux ── -->
+      <div class="form-step" data-step="3">
+        <div class="form-step__title">
+          <span class="step-icon">🌐</span>
+          <h3 data-fr="Profil & Réseaux sociaux" data-en="Profile & Social media">Profil &amp; Réseaux sociaux</h3>
+        </div>
+
+        <div class="field-row field-row--2">
+          <div class="field">
+            <label for="linkedin">
+              <svg class="social-icon linkedin" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+              LinkedIn
+            </label>
+            <input type="url" id="linkedin" name="linkedin" placeholder="linkedin.com/in/votre-profil" />
+          </div>
+          <div class="field">
+            <label for="twitter">
+              <svg class="social-icon twitter" viewBox="0 0 24 24" fill="currentColor"><path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 01-1.93.07 4.28 4.28 0 004 2.98 8.521 8.521 0 01-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/></svg>
+              Twitter / X
+            </label>
+            <input type="url" id="twitter" name="twitter" placeholder="twitter.com/votre-compte" />
+          </div>
+        </div>
+
+        <div class="field-row field-row--2">
+          <div class="field">
+            <label for="instagram">
+              <svg class="social-icon instagram" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+              Instagram
+            </label>
+            <input type="url" id="instagram" name="instagram" placeholder="instagram.com/votre-compte" />
+          </div>
+          <div class="field">
+            <label for="facebook">
+              <svg class="social-icon facebook" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+              Facebook
+            </label>
+            <input type="url" id="facebook" name="facebook" placeholder="facebook.com/votre-profil" />
+          </div>
+        </div>
+
+        <!-- CV Upload -->
+        <div class="field">
+          <label>
+            <span data-fr="Curriculum Vitae (CV)" data-en="Curriculum Vitae (CV)">Curriculum Vitae (CV)</span>
+          </label>
+          <div class="upload-zone upload-zone--cv" id="cvZone">
+            <div class="upload-zone__icon">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+            </div>
+            <div class="upload-zone__text">
+              <p id="cvLabel" data-fr="Glissez votre CV ici ou" data-en="Drag your CV here or">Glissez votre CV ici ou</p>
+              <label for="cvInput" class="upload-btn" data-fr="parcourir" data-en="browse">parcourir</label>
+              <input type="file" id="cvInput" name="cv" accept=".pdf,.doc,.docx" hidden />
+              <small data-fr="PDF, DOC, DOCX — max 10 MB" data-en="PDF, DOC, DOCX — max 10 MB">PDF, DOC, DOCX — max 10 MB</small>
+            </div>
+          </div>
+        </div>
+
+        <!-- Consentement GDPR -->
+        <div class="field field--checkbox">
+          <label class="checkbox-label">
+            <input type="checkbox" id="consent" name="consent" required />
+            <span class="checkbox-custom"></span>
+            <span data-fr="J'accepte que mes données soient utilisées dans le cadre de cette association." data-en="I agree that my data may be used within this association.">
+              J'accepte que mes données soient utilisées dans le cadre de cette association.
+            </span>
+          </label>
+          <span class="field__error" id="consentError"></span>
+        </div>
+
+        <div class="form-nav">
+          <button type="button" class="btn btn--back" data-prev="2">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+            <span data-fr="Retour" data-en="Back">Retour</span>
+          </button>
+          <button type="submit" class="btn btn--submit">
+            <span data-fr="Envoyer ma candidature" data-en="Submit my application">Envoyer ma candidature</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- ── SUCCESS ── -->
+      <div class="form-success" id="formSuccess">
+        <div class="success-anim">🎉</div>
+        <h3 data-fr="Candidature envoyée !" data-en="Application submitted!">Candidature envoyée !</h3>
+        <p data-fr="Merci de rejoindre l'Association des Jeunes Diplômés de Djibouti. Vous recevrez une confirmation sous 48h." data-en="Thank you for joining the Association of Young Graduates of Djibouti. You will receive confirmation within 48 hours.">
+          Merci de rejoindre l'Association des Jeunes Diplômés de Djibouti.<br/>Vous recevrez une confirmation sous 48h.
+        </p>
+        <button type="button" class="btn btn--submit" id="resetBtn">
+          <span data-fr="Nouvelle inscription" data-en="New registration">Nouvelle inscription</span>
+        </button>
+      </div>
+    </form>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <span class="hero__flag">🇩🇯</span>
+      <p data-fr="Association des Jeunes Diplômés de Djibouti — Tous droits réservés" data-en="Association of Young Graduates of Djibouti — All rights reserved">
+        Association des Jeunes Diplômés de Djibouti — Tous droits réservés
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
