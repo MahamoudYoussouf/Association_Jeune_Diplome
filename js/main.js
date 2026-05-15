@@ -7,7 +7,7 @@
    Remplacez VOTRE_URL_GOOGLE_SCRIPT par l'URL de déploiement
    de votre Google Apps Script (voir README.md pour les étapes).
 ──────────────────────────────────────────────────────────────── */
-const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbziYt1z99g-9jkgPLLSQ8yGW-aFC_ibFXJlDfU6XiqqPsvkg1orFrQ1Mj0i2pcw0tpeaw/exec';
+const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzEzfihfJw9y3MFYml358zFyWifq-KRlQItTVN3W9qLCc0A59o_fqepWGtZVNfDgGSCfQ/exec';
 
 /* ─── LANGUAGE ─────────────────────────────────────────────── */
 let currentLang = 'fr';
