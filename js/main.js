@@ -306,7 +306,7 @@ document.getElementById('registrationForm')?.addEventListener('submit', async fu
   };
 
   try {
-    if (GOOGLE_SCRIPT_URL === 'VOTRE_URL_GOOGLE_SCRIPT') {
+    if (GOOGLE_SCRIPT_URL === 'https://script.google.com/macros/s/AKfycbzEzfihfJw9y3MFYml358zFyWifq-KRlQItTVN3W9qLCc0A59o_fqepWGtZVNfDgGSCfQ/exec') {
       /* Demo mode: no real script configured */
       await new Promise(r => setTimeout(r, 1200));
       showSuccess();
@@ -318,7 +318,11 @@ document.getElementById('registrationForm')?.addEventListener('submit', async fu
       const cvFile = document.getElementById('cvInput')?.files[0];
       if (cvFile) formData.append('cvData', cvFile);
 
-      await fetch(GOOGLE_SCRIPT_URL, { method: 'POST', body: formData });
+      await fetch(GOOGLE_SCRIPT_URL, {
+        method: 'POST',
+        body: formData,
+        mode: 'no-cors'
+      });
       showSuccess();
     }
   } catch (err) {
